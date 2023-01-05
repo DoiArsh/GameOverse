@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arsh</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/favicon/g.png">
+    </head>
+<body>
+  <div class="container">
+        <div class="title">Registration</div>
+        <form action="#" id="form">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name:</span>
+              <input type="text" id="name" placeholder="Enter your Name"required>
+            <div class="input-box">
+                <span class="details">User Name:</span>
+                <input type="text" placeholder="Enter your Username"required>
+              </div>
+              <div class="input box">
+                <span class="details">Email:</span>
+                <input type="text" placeholder="Enter your Email"required>
+              </div>
+              <div class="input box">
+                <span class="details">Password:</span>
+                <input type="text" id="pass" placeholder="Enter your password"required>
+              </div>
+              <div class="input box">
+                <span class="details">Confirm Password:</span>
+                <input type="text" placeholder="Confirm your password"required>
+              </div>
+              <div class="input box">
+                <span class="details">Phone:</span>
+                <input type="text"  placeholder="Confirm your password"required>
+              </div>
+          </div>
+          </div>
+    <div class="button">
+          <input type="submit" value="Register">
+    </div>
+  </form>
+  </div>
+  <script>
+    const form = document.getElementById('form');
+    const firstName = document.getElementById('name');
+    const password = document.getElementById('pass');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      const firstNameValue = firstName.value;
+      const passwordValue = pass.value;  
+
+      localStorage.setItem('first-name', firstNameValue);
+      localStorage.setItem('password', passwordValue);
+
+      window.location.href = "/login/login.html";
+    })
+  </script>
+</body>
+</html>

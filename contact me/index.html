@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>GameOverse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/favicon/g.png">
+    </head>
+    <header>
+        <div class="pos">
+        <div class="toggle" onclick="toggleMenu();"></div> </div>
+            <ul class="navigation">
+                <a href="index.html">Home</a>
+                <a href="about me/index.html">About me</a>
+                <a href="#" class="active">Contact me</a>
+            </ul>
+       
+    </header>
+    <body>
+        <section>
+            <div class="container">
+             <div class="contactInfo">
+             <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="location.png"></span>
+                        <span>8, SanjarNagar P.O-Savgadh<br>
+                            Nr. RTO, Dist. Himatnagar<br>
+                        Sabarkantha 383220</span>
+                        <li>
+                           <span><img src="mail.png"></span>
+                           <span>arshdoi2004@gmail.com</span>
+                        </li>
+                         <li>
+                            <span><img src="call.png"></span>
+                            <span>+91 99139 81880</span>
+                         </li>
+                    </li>
+                </ul>
+             </div>
+             </div>
+             <div class="contactForm">
+                <h2>Send a Message</h2>
+                <form action="mailto:arshdoi2004@gmail.com" method="post" enctype="text/plain">
+                <div class="formBox">
+                
+                    <div class="inputBox w50">
+                        <input type="text" name="First-Name" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="Last-Name" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="Email-Address" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="Mobile-Number" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required name="Message"></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit"value="send">
+                    </div>
+                
+                </div>
+            </form>
+             </div>            
+            </div>
+        </section>
+        <script type="text/javascript">
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>    

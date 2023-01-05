@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>GameOverse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/favicon/g.png">
+    </head>
+    
+    <body>
+        <header>
+            <img src="logo.png.png" class="logo">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">About me</a></li>
+                <li><a href="contact me/index.html">Contact me</a></li>
+            </ul>
+        </header>
+        <sector class="section">
+            <div class="circle">
+            </div>
+            <div class="content">
+                <div class="textbox">
+                    
+                    <h2>WEB DEVELOPER<br><span>ARSH DOI</span></h2>
+                    <p>I am MOHMED ARSH DOI currently studying in diploma Computer Engineering at Government Polytechnic Himatnagar.
+                        This Website is my RWPD project which has TOP 10 GAMES in different categories.This Website contains the best games
+                        throughout the playstore So, None of you have to scroll for eternity.
+
+                    </p>
+                </div>
+                <div class="imgbox">
+                    <img src="arsh.png" class="arsh">
+                </div>
+                </div>
+                
+            </div>
+           
+            
+           
+        </sector>
+        <script type="text/javascript">
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

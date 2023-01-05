@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+.arsh{
+    width: 270px;
+    height: 520px;
+    
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    position:relative;
+    width: 400px;
+    height: 200px;
+    padding-left: 60px;
+
+}
+header ul
+{
+    position: relative;
+    display: flex;
+   
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 40px;
+    margin-bottom: 70px;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+  padding: 10px;
+    text-decoration: none;
+    font-family: Nabla;
+    font-size: 1.7rem;
+        animation-name: normal;
+        animation-duration: 0.1s;
+}
+a:hover{
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+animation-duration: 0.1s
+}
+.active{
+    font-size: 1.8rem;
+    color: yellow;
+  background-color: #DFD3C3;
+  border-radius: 50px;
+}
+.content
+{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox
+{
+    position: relative;
+    max-width: 600px;
+    padding-left: 40px;
+}
+.content .textbox h2
+{
+    color:#333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textbox h2 span
+{
+    color: #D0B8A8;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textbox p
+{
+    color:#333;
+}    
+.content .textbox a
+{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+    .content .imgbox .arsh
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+   margin-right: 100px;
+    
+}
+.content .imgbox .arsh
+{
+    max-width: 340px;
+}
+.circle
+{
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D0B8A8;
+    clip-path: circle(600px at right 600px);
+    
+}
+
+@media (max-width:1100px)
+{
+    .arsh{
+        width: 135px;
+        height: 360px;
+        
+    }
+ header
+ {
+    padding: 20px;
+ }   
+ 
+ header ul{
+    display: none;
+ }
+ .toggle
+ {
+    position: relative;
+    margin-bottom: 150px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 11;
+ }
+ .toggle.active
+ {
+    position:fixed;
+    right: 20px;
+    background: url(close-1.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ header ul.navigation.active
+ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+    font-size: 1.5em;
+ }
+
+ section
+ {
+    padding: 20px;
+ }
+ .content
+ {
+    flex-direction: column;
+    margin-top: 100px;
+ }
+ .content .textbox h2
+ {
+    font-size: 3em;
+    margin-bottom: 15px;
+    
+ }
+ .content .textbox
+ {
+    max-width: 100%;
+    
+ }
+ .content .imgbox
+ {
+    max-width: 100%;
+    justify-content: center;
+    
+ }
+ .content .imgbox .arsh
+ {
+    max-width: 300px;
+ }
+ .circle
+ {
+    
+    clip-path: ellipse(600px 45% at bottom center);
+ }
+ .logo{
+padding: 0px;
+
+}
+}
+@media (max-width:500px) {
+    .logo{
+        width: 300px;
+        height: 150px;
+    }
+    .arsh{
+        width: 100px;
+        height: 410px;
+        
+    }
+}
+
+
+
+
+@keyframes enlarge {
+    0%{
+        margin: 10px;
+        font-weight: 900;
+        color: yellow;
+        font-family: Nabla;
+        font-size: 1.7rem;
+        border-radius: 50px;
+    }
+    100%{
+        font-size: 1.9rem;
+        color: yellow;
+      background-color: #DFD3C3;
+      border-radius: 50px;
+    }
+   }
+   @keyframes normal {
+    0%{
+        font-size: 1.7rem;
+        color: yellow;
+      background-color: #DFD3C3;
+      border-radius: 50px;
+    }
+    100%{
+        margin: 10px;
+        font-weight: 900;
+        color: yellow;
+        font-family: Nabla;
+        font-size: 1.9rem;
+    }
+ 
+   }
