@@ -14,8 +14,8 @@
     margin-top: 10px;
     padding-top: 10px;
     width: 100px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-radius: 15px;
+    border-bottom-radius: 15px;
     height: 50px;
     background-color:  #F8EDE3;
     box-shadow: 3px 3px 3px 3px rgb(124, 123, 123);
@@ -36,9 +36,9 @@
    animation-name: noair1;
    animation-duration: 0.5s;
 }
-.navbar .container-fluid{
+/* .navbar .container-fluid{
     justify-content:left;
-}
+} */
 .ff{
     font-family: Nabla;
     font-size: 5rem;
