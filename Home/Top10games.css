@@ -9,21 +9,20 @@
    justify-content: center;
    text-align: center;
 }
-.back {
+	.back {
     border: 1px solid  #F8EDE3;
     margin-top: 10px;
     padding-top: 10px;
     width: 100px;
-    border-top-radius: 15px;
-    border-bottom-radius: 15px;
+    border-radius: 15px;
+	text-align: center;
+    color: #7D6E83;
+    font-size:large;
+	font-weight: 400;
     height: 50px;
     background-color:  #F8EDE3;
     box-shadow: 3px 3px 3px 3px rgb(124, 123, 123);
 
-}
-.back a{
-    color: #7D6E83;
-    text-decoration: none;
 }
 .z{
   width: 100%;
