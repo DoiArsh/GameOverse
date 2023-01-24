@@ -15,15 +15,19 @@
     padding-top: 10px;
     width: 100px;
     border-radius: 15px;
-	text-align: center;
+text-align: center;
     color: #7D6E83;
-    font-size:large;
-	font-weight: 400;
     height: 50px;
     background-color:  #F8EDE3;
     box-shadow: 3px 3px 3px 3px rgb(124, 123, 123);
 		text-decoration:none;
 
+}
+back a{
+	font-size:large;
+	color: #7D6E83;
+	font-weight: 400;
+	text-decoration:none;
 }
 .z{
   width: 100%;
