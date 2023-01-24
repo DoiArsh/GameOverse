@@ -14,8 +14,8 @@
     margin-top: 10px;
     padding-top: 10px;
     width: 100px;
-    border-radius: 15px;
-/*     border-bottom-radius: 15px; */
+    border-top-radius: 15px;
+    border-bottom-radius: 15px;
     height: 50px;
     background-color:  #F8EDE3;
     box-shadow: 3px 3px 3px 3px rgb(124, 123, 123);
